@@ -1,32 +1,35 @@
 body {
-     font-family: "Montserrat", sans-serif;
-     margin: 0px;
-     padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
-
 
 /* HOME PAGE */
 .enroll-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #0006B1;
-    height: 50px
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0006b1;
+  height: 50px;
 }
 
 .enroll-container a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
 }
 .enroll-container #click-here {
-     margin-left: 5px;
+  margin-left: 5px;
 }
 
 .hero-section {
   /* background: #e9e9f1; */
   padding: 60px 0px;
+  background-color: #e5e5eb;
+  /* background-image: url('../../images/background-image.png');
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 
 .hero-section .hero-content {
@@ -45,27 +48,25 @@ body {
 }
 
 .hero-section .left .before-title {
-     display: flex;
-     align-items: center;
-     
+  display: flex;
+  align-items: center;
 }
 
-.hero-section .left .before-title svg{
-     width: 25px;
-     margin-right: 10px;
-     font-weight: 600;
+.hero-section .left .before-title svg {
+  width: 25px;
+  margin-right: 10px;
+  font-weight: 600;
 }
 
-.hero-section .left .before-title p{
-     font-size: 14px;
-     letter-spacing: 2.5px;
-     font-weight: 600;
-     color:#05002d; 
-     
+.hero-section .left .before-title p {
+  font-size: 14px;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+  color: #05002d;
 }
 
 .hero-section .left .title {
-    margin: 20px 0px 10px 0px;
+  margin: 20px 0px 10px 0px;
 }
 
 .hero-section .left h1 {
@@ -79,17 +80,18 @@ body {
 }
 
 .hero-section .left .typing-text {
-     color: #281870; 
-     background-image: linear-gradient(45deg, #05002d, #FFBF00 100%); 
-     /* background-image: linear-gradient(45deg, #281870 ,#0092E7 100%);  */
-     background-clip: text; 
+  /* color: #05002d;  */
+  color: #ffbf00;
+  /* background-image: linear-gradient(45deg, #05002d, #FFBF00 100%);  */
+  /* background-image: linear-gradient(45deg, #281870 ,#0092E7 100%);  */
+  /* background-clip: text; 
      -webkit-background-clip: text; 
-     -webkit-text-fill-color: transparent;
-      display: inline-block;
-     height: 52px;     
-     border-right: 2px solid #27176F; /* Optional blinking caret */
-     white-space: nowrap;
-     overflow: hidden;
+     -webkit-text-fill-color: transparent; */
+  display: inline-block;
+  height: 52px;
+  border-right: 2px solid #ffbf00; /* Optional blinking caret */
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .hero-section .left .title p {
@@ -116,11 +118,10 @@ body {
 }
 
 .hero-section .btn.primary {
-  background:#28186C;
-  /* background:#0092E7; */
+  /* background:#28186C; */
+  background-color: black;
   color: #fff;
 }
-
 
 .hero-section .btn:hover {
   transform: scale(1.03);
@@ -132,15 +133,12 @@ body {
   /* text-align: center; */
 }
 
-
-
 .hero-section .grid-container {
   display: grid;
   grid-template-columns: auto auto;
   gap: 12px;
   grid-auto-rows: 150px;
 }
-
 
 .hero-section .grid-item img {
   width: 100%;
@@ -161,7 +159,6 @@ body {
 
 .hero-section .grid-container #grid-item3 {
   grid-area: 2/ 1/ 3/ 2;
-  
 }
 
 .hero-section .grid-container #grid-item4 {
@@ -172,32 +169,224 @@ body {
   grid-area: 3/ 1/ 4/ 4;
 }
 
-
-/* ABOUUT US SECTION */
-.about-us-section {
-     display: flex;
-     justify-content: space-between;
-     width:90%;
-     margin: auto;
+/* ARE YOU READY FOR THE FUTURE SECTION */
+.future-section {
+  margin: 90px 0px 70px 0px;
+}
+.future-section .future-section-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
 }
 
-.about-us-section .about-us-image{
-     width: 50%;
-     
-} 
-
-.about-us-section img {
-     width: 100%;
+.future-section .future-section-container .future-image {
+  width: 50%;
+  padding-right: 70px;
 }
 
-.about-us-section .about-us-content{
-     width: 50%;
-     
+.future-section .future-section-container img {
+  width: 100%;
+  border-radius: 20px;
+  /* margin-right: 50px; */
 }
 
-.about-us-section .about-us-content h2{
-     font-size: 35px;
-     font-weight: 700;
-     
+.future-section-container .future-content {
+  width: 50%;
 }
 
+.future-section-container .future-content h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0px 0px 20px 0px;
+}
+
+.future-section-container .future-content p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.programmes-section {
+  padding: 70px 0px;
+  background-color: #05002d;
+  background-image: url("../../images/background-image2.jpg");
+  background-size: cover;
+}
+
+.programmes-section .programmes-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.programmes-section .programmes-title h2 {
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+  margin: 0px 0px 10px 0px;
+}
+
+.programmes-section .programmes-title p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #f9f9f9;
+  max-width: 600px;
+  margin: 0px auto;
+}
+
+.programme-section {
+  text-align: center;
+  /* padding: 2rem; */
+}
+
+.programmes-section .tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.programmes-section .tab {
+  padding: 10px 20px;
+  /* border: 1px solid #ddd; */
+  border: none;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin: 5px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+.programmes-section .tab.active {
+  background-color: #563acc;
+  color: white;
+  font-weight: bold;
+}
+
+.programmes-section .courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.programmes-section .course-card {
+  border: 1px solid #eee;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: white;
+  text-align: left;
+}
+
+.programmes-section .course-image {
+  position: relative;
+}
+
+.programmes-section .course-image img {
+  width: 100%;
+  border-radius: 10px;
+  height: 200px;
+}
+
+.programmes-section .badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #f5b800;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  text-shadow: #05002d;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.programmes-section .course-card h3 {
+  font-size: 18px;
+}
+
+.programmes-section .course-card p {
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.programmes-section .learn-more-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: grey;
+  background-color: transparent;
+  border: none;
+  padding: 10px 0px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.programmes-section .learn-more-btn::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%) scale(1);
+  width: 35px;
+  height: 35px;
+  background: rgba(0, 26, 255, 0.4);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+
+.programmes-section .learn-more-btn:hover::before {
+  transform: translateY(-50%) scale(0);
+}
+
+.programmes-section .learn-more-btn {
+  position: relative;
+  z-index: 1;
+}
+
+.aboutus-section {
+  margin: 70px 0px;
+}
+
+.aboutus-section .aboutus-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.aboutus-section .aboutus-container .aboutus-content {
+  width: 50%;
+}
+
+.aboutus-section .aboutus-container .aboutus-image {
+  width: 50%;
+  padding-left: 70px;
+}
+
+.aboutus-section .aboutus-container .aboutus-image img {
+  width: 100%;
+  border-radius: 20px;
+  filter:contrast(0.9) brightness(0.9);
+  transition: filter 0.3s ease;
+}
+
+.aboutus-container .aboutus-content h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0px 0px 20px 0px;
+}
+
+.aboutus-container .aboutus-content p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}

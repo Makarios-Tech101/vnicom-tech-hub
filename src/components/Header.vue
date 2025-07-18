@@ -41,8 +41,9 @@ header {
   left: 0;
   width: 100%;
   background: white;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
   z-index: 1000;
+  /* background-color: #E5E5EB; */
 }
 
 .header-container {

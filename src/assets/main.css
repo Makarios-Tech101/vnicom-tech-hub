@@ -25,8 +25,8 @@ body {
 
 .hero-section {
   /* background: #e9e9f1; */
-  padding: 60px 0px;
-  background-color: #e5e5eb;
+  padding: 90px 0px 70px 0px;
+  background-color: #f5f5f5;
   /* background-image: url('../../images/background-image.png');
   background-repeat: no-repeat;
   background-size: cover; */
@@ -221,7 +221,7 @@ body {
 }
 
 .programmes-section .programmes-title h2 {
-  font-size: 30px;
+  font-size: 38px;
   color: white;
   font-weight: 700;
   margin: 0px 0px 10px 0px;
@@ -353,6 +353,7 @@ body {
 
 .aboutus-section {
   margin: 70px 0px;
+  
 }
 
 .aboutus-section .aboutus-container {
@@ -390,3 +391,210 @@ body {
   font-weight: 400;
   line-height: 22px;
 }
+
+.whychoose-section {
+  padding: 80px 0px 0px 0px;
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* background-image: url("../../public/images/grid-img6.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: url("../../images/grid-img6.jpg") rgba(0, 0, 14, 0.8);
+  background-blend-mode: multiply;
+}
+
+
+/* .whychoose-section  .whychoose-first-container {
+  
+} */
+
+.whychoose-section .whychoose-first-container h3 {
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+  margin: 0px 0px 10px 0px;
+  max-width: 600px;
+  text-align: center;
+  
+}
+
+.whychoose-section .whychoose-first-container p {
+   font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0px;;
+  color: #f9f9f9;
+  max-width: 600px;
+  text-align: center;
+  
+}
+
+.whychoose-section .whychoose-second-container {
+  width: 85%;
+  /* margin: -250px auto 0px auto; */
+  background-color:#f9f9f9;
+  /* position: relative;
+  bottom: 550px; */
+  padding: 30px 25px;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+.whychoose-section .whychoose-second-container .whychoose-second-container-title {
+  text-align: center;
+  margin: 0px auto;
+}
+
+.whychoose-section .whychoose-second-container .whychoose-second-container-title h3 {
+  margin-bottom: 0px;
+  font-size: 35px;
+}
+
+.whychoose-section .whychoose-second-container .whychoose-second-container-title p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+.whychoose-section .whychoose-second-container .whychoose-grid {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.whychoose-section .whychoose-second-container .whychoose-card {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  height: 250px;
+}
+
+.whychoose-section .whychoose-second-container #whychoose-card-blue{
+  background-image: url("../../images/why-choose-blue.png");
+  background-size: cover;
+}
+
+.whychoose-section .whychoose-second-container #whychoose-card-blue svg {
+  padding: 5px;
+  background-color: #c3d4ff;
+  border-radius: 50%;
+}
+
+.whychoose-section .whychoose-second-container #whychoose-card-yellow{
+ background-color: #ffebad;
+}
+
+.whychoose-section .whychoose-second-container #whychoose-card-yellow svg {
+  padding: 5px;
+  background-color:#ffdb6e;
+  border-radius: 50%;
+}
+
+.whychoose-section .whychoose-second-container #whychoose-card-purple{
+  background-image: url("../../images//why-choose-purple.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.whychoose-section .whychoose-second-container #whychoose-card-purple svg {
+  padding: 5px;
+  background-color: #d1c8ff;
+  border-radius: 50%;
+}
+
+.whychoose-section .whychoose-second-container .whychoose-card h4 {
+  font-weight: 500;
+  font-size: 17px;
+  color: black;
+
+}
+
+.whychoose-section .whychoose-second-container .whychoose-card p{
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(65, 65, 65);
+  line-height: 21px;
+}
+
+
+.opportunities-section {
+  margin: 190px 0px 70px 0px;
+}
+
+.opportunities-section .opportunities-title {
+  text-align: center;
+}
+
+.opportunities-section .opportunities-title h3{
+  font-size: 35px;
+  margin-bottom: 0px;
+}
+
+.opportunities-section .opportunities-title p{
+  font-size: 14px;
+  margin-top: 15px;
+  max-width: 600px;
+  margin: 0px auto;
+  line-height: 22px;
+
+}
+
+.opportunities-section .opportunities-grid {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 50px auto 0px auto;
+  
+}
+
+.opportunities-section .opportunities-grid .opportunities-content {
+  /* padding-left: 70px; */
+  width: 50%;
+}
+
+.opportunities-section .opportunities-grid .opportunities-image{
+  width: 50%;
+  
+}
+
+.opportunities-section .opportunities-grid .opportunities-image img{
+  width: 500px;
+  border-radius: 20px;
+  filter: contrast(1.1) brightness(0.9);
+}
+
+.opportunities-section .opportunities-grid .opportunities-grid-items {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+  padding: 20px 0px;
+}
+
+.opportunities-section .opportunities-grid .opportunities-grid-icon {
+  margin-right: 15px;
+}
+
+.opportunities-section .opportunities-grid .opportunities-grid-icon svg {
+  padding: 30px;
+  background-color: #0093E5;
+  border-radius: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+.opportunities-section .opportunities-grid .opportunities-grid-content h6{
+  font-size: 25px;
+  margin: 0px;
+}
+
+.opportunities-section .opportunities-grid .opportunities-grid-content p{
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0px;
+}
+
+

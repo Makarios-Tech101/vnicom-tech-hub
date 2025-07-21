@@ -285,7 +285,7 @@ onUnmounted(() => {
             <section class="future-section">
                 <div class="future-section-container">
                     <div class="future-image">
-                        <img src="../../images/why-us.jpg" alt="About Us" />
+                        <img src="/images/why-us.jpg" alt="About Us" />
                     </div>
                     <div class="future-content">
                         <h2>The Future Is Here, <br> Are You Ready For The It</h2>
@@ -374,7 +374,7 @@ onUnmounted(() => {
                       </p>
                   </div>
                   <div class="aboutus-image">
-                     <img src="../../images/grid-img1.jpg">
+                     <img src="/images/grid-img1.jpg">
                   </div>
                </div>
             </section>
@@ -450,7 +450,7 @@ onUnmounted(() => {
                </div>
                <div class="opportunities-grid">
                  <div class="opportunities-image">
-                    <img src="../../images/grid-img8.jpg">
+                    <img src="/images/grid-img8.jpg">
                  </div>
                  <div class="opportunities-content">
                     <div class="opportunities-grid-items">
@@ -532,9 +532,6 @@ onUnmounted(() => {
                 <div class="testimonial-wrapper">
 
                   <div class="testimonial-content">
-                       <!-- <div class="testimonial-title">
-                          <h2>Some of Our <span class="highlight">Alumni</span> Stories</h2>
-                        </div> -->
                       <div class="avatars-row">
                       <img
                         v-for="(testimonial, index) in testimonials"
@@ -565,10 +562,9 @@ onUnmounted(() => {
             </section>
         </main>
       <Footer />
-          <!-- Slack Floating Button -->
       <div>
         <a href="https://vnicomhub.slack.com/signup#/domain-signup" target="_blank" class="slack-button">
-          <img src="../../images/slack-icon.png" alt="slack">
+          <img src="/images/slack-icon.png" alt="slack">
         </a>
       </div>  
       <div>

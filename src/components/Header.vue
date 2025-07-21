@@ -14,7 +14,7 @@ const toggleMenu = () => {
       <div class="header-container">
          <div class="logo-container">
             <a href="#">
-                <img src="../../images/vnicom-tech-ogo.png">
+                <img src="/images/vnicom-tech-ogo.png">
             </a>
          </div>
          <div class="menu-container" :class="{ open: isMenuOpen }">

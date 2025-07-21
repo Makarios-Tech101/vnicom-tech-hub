@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted, computed } from 'vue'
+import { ref, onMounted, computed, onUnmounted } from 'vue'
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
 import '../assets/main.css';
@@ -124,6 +124,96 @@ onMounted(() => {
   typeHeading()
 })
 
+
+const counters = ref([
+  { target: 3, current: 3, suffix: '+', label: 'Years of Experience', loop: false },
+  { target: 150, current: 0, suffix: '+', label: 'Capstone Projects Completed', loop: true },
+  { target: 350000, current: 0, suffix: '+', label: 'Hours of Training Delivered', loop: true },
+  { target: 99, current: 0, suffix: '%', label: 'Happy Students', loop: true },
+]);
+
+const animateCounter = (item) => {
+  const increment = item.target / 100;
+
+  const update = () => {
+    if (item.current < item.target) {
+      item.current = Math.min(item.current + increment, item.target);
+      item.current = Math.round(item.current);
+      requestAnimationFrame(update);
+    } else if (item.loop) {
+      // Only reset if loop is true
+      setTimeout(() => {
+        item.current = 0;
+        update();
+      }, 7000); // 7 seconds pause before replay
+    }
+  };
+
+  update();
+};
+
+onMounted(() => {
+  counters.value.forEach(animateCounter);
+});
+
+
+const testimonials = ref([
+  {
+    name: 'Josephine Taiwo Kayode',
+    track: 'Product Designer',
+    quote:
+      'My training experience with Vnicom Tech Hub was informative and valuable. The instructors at Vnicom Tech Hub provided me with a solid foundation in design principles, techniques, and industry best practices.',
+    image: '../../images/grid-img7.jpg',
+  },
+  {
+    name: 'Gbenga Oladunjoye',
+    track: 'Full Stack We Developer',
+    quote: 'I began my tech journey at Vnicom Tech Hub with no prior experience. During my time there, I learned the fundamentals of web development, starting from HTML and CSS to mastering JavaScript. The structured training and supportive environment helped me build real-world skills in both front-end and back-end development. I also gained practical knowledge in database management, security, and deployment. Beyond technical training, Vnicom helped me develop essential soft skills like communication, teamwork, and problem-solving. Thanks to Vnicom, I’m now confidently pursuing a career as a full-stack web developer.',
+    image: '../../images/grid-img8.jpg',
+  },
+  {
+    name: 'Fatai Balikis Opeyemi',
+    track: 'UI/UX Designer',
+    quote: 'Vnicom Tech Hub eased and sped up my learning process. I must say it is a platform specifically ordained by God for me to be trained in. The 3 months learning experience I had in their bootcamp changed my story for the better. Everything I can design today was as a result of the training I had in the bootcamp. I was not just trained to design, I had access to a lot of helpful information online. I am a proud product of this learning platform. The experience was tremendous. Shout out to My tutor Mr.Akinjide Stanley',
+    image: '../../images/grid-img7.jpg',
+  },
+]);
+
+const currentIndex = ref(0);
+
+const currentTestimonial = computed(() => testimonials.value[currentIndex.value]);
+
+const next = () => {
+  currentIndex.value =
+    (currentIndex.value + 1) % testimonials.value.length;
+};
+
+const prev = () => {
+  currentIndex.value =
+    (currentIndex.value - 1 + testimonials.value.length) % testimonials.value.length;
+};
+
+const goToTestimonial = (index) => {
+  currentIndex.value = index;
+};
+
+const showScrollTop = ref(false);
+
+const handleScroll = () => {
+  showScrollTop.value = window.scrollY > 200; 
+};
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
+})
 </script>
 
 <template>
@@ -178,7 +268,7 @@ onMounted(() => {
                                 </div>
                                 <div class="grid-item" id="grid-item4">
                                     <!-- <img src="../../images/grid-img8.jpg" alt="Tech learning" /> -->
-                                     <img src="../../images/grid-img7.jpg" alt="Tech learning" /> -->
+                                     <img src="../../images/grid-img7.jpg" alt="Tech learning" /> 
                                 </div>
                                 <div class="grid-item" id="grid-item5">
                                     <img src="../../images/grid-img3.jpg" alt="Tech learning" />
@@ -222,7 +312,7 @@ onMounted(() => {
                     </div>
                 </div>
             </section>
-            <section class="programmes-section">
+            <section class="programmes-section" id="our-programmes">
                 <div class="programmes-title">
                     <h2>Choose A Programme</h2>
                     <p>
@@ -255,7 +345,7 @@ onMounted(() => {
                     </div>    
                 </div>
             </section>
-            <section class="aboutus-section">
+            <section class="aboutus-section" id="about-us">
                <div class="aboutus-container">
                   <div class="aboutus-content">
                     <h2>About Us</h2>
@@ -426,8 +516,67 @@ onMounted(() => {
                  </div>
                </div>
             </section>
+            <section class="counter-section">
+                <div class="counter-container">
+                    <div class="counter-box" v-for="(item, index) in counters" :key="index">
+                      <h3>{{ item.current.toLocaleString() }} <span>{{ item.suffix }}</span></h3>
+                      <p>{{ item.label }}</p>
+                    </div>
+                </div>
+            </section>
+            <section class="testimonial-section" id="testimonials">
+                <div class="testimonial-title">
+                   <h2>Some of Our <span class="highlight">Alumni</span> Stories</h2>
+                   <p>Explore the success stories of individuals who have advanced their careers through our training programmes. </p>
+                </div>
+                <div class="testimonial-wrapper">
+
+                  <div class="testimonial-content">
+                       <!-- <div class="testimonial-title">
+                          <h2>Some of Our <span class="highlight">Alumni</span> Stories</h2>
+                        </div> -->
+                      <div class="avatars-row">
+                      <img
+                        v-for="(testimonial, index) in testimonials"
+                        :key="index"
+                        :src="testimonial.image"
+                        :class="{ active: index === currentIndex }"
+                        @click="goToTestimonial(index)"
+                        class="avatar"
+                      />
+                    </div>
+
+                    <p class="quote">“{{ currentTestimonial.quote }}”</p>
+
+                    <div class="author">
+                      <strong>{{ currentTestimonial.name }}</strong>
+                      <p>{{ currentTestimonial.track }}</p>
+                    </div>
+
+                    <div class="arrows">
+                      <button @click="prev">&#8592;</button>
+                      <button @click="next" id="next">&#8594;</button>
+                    </div>
+                  </div>
+                  <div class="testimonial-image">
+                    <img :src="currentTestimonial.image" alt="Testimonial image" />
+                  </div>
+                </div>
+            </section>
         </main>
       <Footer />
+          <!-- Slack Floating Button -->
+      <div>
+        <a href="https://vnicomhub.slack.com/signup#/domain-signup" target="_blank" class="slack-button">
+          <img src="../../images/slack-icon.png" alt="slack">
+        </a>
+      </div>  
+      <div>
+        <!-- Scroll to Top Button -->
+        <button v-if="showScrollTop" @click="scrollToTop" class="scroll-top-button">
+          ↑
+        </button>
+      </div>  
     </div>
 </template>
 

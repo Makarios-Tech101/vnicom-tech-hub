@@ -496,7 +496,7 @@ body {
 }
 
 .whychoose-section .whychoose-second-container #whychoose-card-purple{
-  background-image: url("/public/images/why-choose-purple.png");
+  background-image: url("/images/why-choose-purple.png");
   background-size: cover;
   background-position: center;
 }

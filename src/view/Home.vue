@@ -257,7 +257,7 @@ onUnmounted(() => {
                         <div class="right">
                             <div class="grid-container">
                                 <div class="grid-item" id="grid-item1">
-                                    <img src="../../images/grid-img6.jpg" alt="Tech learning" />
+                                    <img src="/images/gridimg6.jpg" alt="Tech learning" />
                                 </div>
                                 <div class="grid-item" id="grid-item2">
                                     <img src="../../images/grid-img5.jpg" alt="Tech learning" />

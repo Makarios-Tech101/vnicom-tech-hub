@@ -260,21 +260,21 @@ onUnmounted(() => {
                                     <img src="/images/gridimg6.jpg" alt="Tech learning" />
                                 </div>
                                 <div class="grid-item" id="grid-item2">
-                                    <img src="../../images/grid-img5.jpg" alt="Tech learning" />
+                                    <img src="/images/grid-img5.jpg" alt="Tech learning" />
                                 </div>
                                 <div class="grid-item" id="grid-item3">
                                     <!-- <img src="../../images/grid-img7.jpg" alt="Tech learning" /> -->
-                                    <img src="../../images/grid-img9.jpg" alt="Tech learning" />
+                                    <img src="/images/grid-img9.jpg" alt="Tech learning" />
                                 </div>
                                 <div class="grid-item" id="grid-item4">
                                     <!-- <img src="../../images/grid-img8.jpg" alt="Tech learning" /> -->
-                                     <img src="../../images/grid-img7.jpg" alt="Tech learning" /> 
+                                     <img src="/images/grid-img7.jpg" alt="Tech learning" /> 
                                 </div>
                                 <div class="grid-item" id="grid-item5">
-                                    <img src="../../images/grid-img3.jpg" alt="Tech learning" />
+                                    <img src="/images/grid-img3.jpg" alt="Tech learning" />
                                 </div>
                                 <div class="grid-item" id="grid-item6">
-                                    <img src="../../images/grid-img4.jpg" alt="Tech learning" />
+                                    <img src="/images/grid-img4.jpg" alt="Tech learning" />
                                 </div>
                             </div>
                         </div>

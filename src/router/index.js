@@ -1,11 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../view/Home.vue';
 import Alumni from '@/view/Alumni.vue';
+import PresentCohort from '@/view/PresentCohort.vue';
 import DataScience from '@/view/DataScience.vue';
 import FrontendWebDevelopment from '@/view/FrontendWebDevelopment.vue';
 import FullstackWebDevelopment from '@/view/FullstackWebDevelopment.vue';
-import ProductDesign from '@/view/ProductDesign.vue';
+import ProductGraphicDesign from '@/view/ProductGraphicDesign.vue';
 import MobileAppDevelopment from '@/view/MobileAppDevelopment.vue'
+import ReactjsNextjs from '@/view/ReactjsNextjs.vue';
 
 
 const router = createRouter({
@@ -22,6 +24,11 @@ const router = createRouter({
       component: Alumni,
     },
     {
+      path: '/present-cohort',
+      name: 'present-cohort',
+      component: PresentCohort,
+    },
+    {
       path: '/data-science',
       name: 'data-science',
       component: DataScience,
@@ -32,9 +39,9 @@ const router = createRouter({
       component: FrontendWebDevelopment,
     },
     {
-      path: '/fullstack-web-development',
-      name: 'fullstack-web-development',
-      component: FullstackWebDevelopment,
+      path: '/reactjs-nextjs',
+      name: 'reactjs-nextjs',
+      component: ReactjsNextjs,
     },
     {
       path: '/fullstack-web-development',
@@ -47,9 +54,9 @@ const router = createRouter({
       component: MobileAppDevelopment,
     },
     {
-      path: '/product-design',
-      name: 'product-design',
-      component: ProductDesign,
+      path: '/product-graphic-design',
+      name: 'product-graphic-design',
+      component: ProductGraphicDesign,
     },
   ],
   scrollBehavior() {

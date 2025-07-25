@@ -7,6 +7,13 @@ const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
 }
 
+const isDropdownOpen = ref(false);
+
+
+const toggleDropdown = () => {
+  isDropdownOpen.value = !isDropdownOpen.value;
+};
+
 </script>
 
 <template>
@@ -19,22 +26,26 @@ const toggleMenu = () => {
          </div>
          <div class="menu-container" :class="{ open: isMenuOpen }">
             <ul>
-                <li>
+                <li id="menu-item">
                     <a href="#">Home</a>
                 </li>
-                <li>
+                <li id="menu-item">
                     <a href="#our-programmes">Our Programmes</a>
                 </li>
-                <li>
+                <li id="menu-item">
                     <a href="#testimonials">Testimonials</a>
                 </li>
-                <li>
-                    <router-link to="/alumni">Alumni</router-link>
+                <li class="dropdown" id="menu-item" >
+                      <a href="#"  @click.prevent="toggleDropdown">Our Students <span style="font-size: 15px;">&#x2BC6;</span>  </a>
+                      <ul class="dropdown-menu" :class="{ 'open': isDropdownOpen }">
+                          <li class="dropdown-item"><router-link to="/present-cohort">Present Cohort</router-link></li>
+                          <li class="dropdown-item"><router-link to="/alumni">Alumni</router-link></li>
+                      </ul>
                 </li>
-                <li>
+                <li id="menu-item">
                     <a href="#about-us">About Us</a>
                 </li>
-                <li>
+                <li id="menu-item">
                     <a href="mailto:training@vnicomhub.com">Contact Us</a>
                 </li>
             </ul>
@@ -56,7 +67,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background: white;
+  background: white;    
   /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
   z-index: 1000;
   /* background-color: #E5E5EB; */
@@ -67,6 +78,8 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 90%;
+    max-width: 1400px;   
+    min-width: 320px;
     margin: 0 auto;
     padding: 10px 0;
 }
@@ -95,12 +108,13 @@ header {
     list-style-type: none;
 }
 
-.menu-container ul a{
-    color: black;
+.menu-container ul #menu-item a{
+    color: rgb(1, 3, 54);
     text-decoration: none;
-    margin-left: 15px;
-    font-size: 14px;
-    font-weight: 500;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Mukta", sans-serif;
 }
 
 .menu-container ul a:hover{
@@ -109,6 +123,59 @@ header {
 
 .enrol-button {
     margin-left: 20px;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+ul.dropdown-menu {
+    display: flex ;
+    flex-direction: column;
+    align-items: flex-start;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.dropdown-menu {
+   /* display: none; */
+  position: absolute;
+  top: 100%;
+  /* left: -40%; */
+  background: rgba(227, 227, 227);
+  color: rgb(1, 3, 54);
+  width: 230px;
+  padding: 10px 0;
+  margin-top: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 10px;
+  margin-left: 10px;
+}
+
+/* Show dropdown on hover (Desktop) */
+.dropdown:hover .dropdown-menu,
+.dropdown-menu:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown-menu li a {
+  color: white;
+  display: block;
+  font-size: 13px;
+}
+
+
+.dropdown-menu.open {
+  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 /* Responsive Styles */
@@ -136,6 +203,7 @@ header {
     align-items: flex-start;
     width: 90%;
     margin: 0px;
+    width: 100%;
   }
 
   .menu-container ul li{
@@ -149,5 +217,31 @@ header {
   .menu-toggle {
     display: block;  /* show toggle icon */
   }
+
+  .dropdown-menu {
+    display: block !important;
+    position: static !important;
+    background: white;
+    width: 100%;
+    box-shadow: none;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition: none;
+  }
+   
+
+  .dropdown-menu li a {
+      padding: 5px 0px;
+      font-size: 12px;
+  }
+  
+
+  .dropdown-menu .dropdown-item { 
+      padding: 0px;
+      margin: 0px 0px 0px 10px;
+
+      display: block;
+   }
+
 }
 </style>

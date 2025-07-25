@@ -46,7 +46,7 @@
             <div class="footer-fourth-column">
                 <h5>Contact</h5>
                 <div class="footer-fourth-column-contact">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 3l-6.5 18a.55.55 0 0 1-1 0L10 14l-7-3.5a.55.55 0 0 1 0-1z"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 3l-6.5 18a.55.55 0 0 1-1 0L10 14l-7-3.5a.55.55 0 0 1 0-1z"/>
                     </svg>
                     <p>No 3, Dekunle Atoyebi Street, Oasis Junction, Gasline Road, Magboro Ogun State.</p>
                 </div>
@@ -90,6 +90,8 @@
     display: flex;
     width: 90%;
     margin: 0 auto;
+     max-width: 1400px;   
+    min-width: 320px;
 }
 
 .footer-container h5 {
@@ -106,8 +108,8 @@
 
 .footer .footer-first-column p {
     color: #fff;
-    font-size: 13px;
-    line-height: 21px;
+    font-size: 15px;
+    line-height: 25px;
     margin-top: 0px;
 }
 
@@ -140,7 +142,7 @@
     color:#fff;
     display: block;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 30px;
 }
 
@@ -159,7 +161,7 @@
     color:#fff;
     display: block;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 30px;
 }
 
@@ -185,8 +187,9 @@
 }
 
 .footer .footer-fourth-column .footer-fourth-column-contact p {
- color:#fff;
- font-size: 13px;
+    color:#fff;
+    font-size: 15px;
+    margin: 0px 0px 8px 0px;
     
 }
 
@@ -198,7 +201,39 @@
 
 .footer .copyright-section p{
     color: white;
-    font-size: 13px;
+    font-size: 15px;
+}
+
+
+@media (max-width: 992px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .footer-container h5 {
+        margin: 0px 0px 0px 0px;
+        font-size: 18px;
+        color: #f5b800;
+    }
+
+    .footer .footer-first-column {
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    .footer .footer-second-column {
+        width: 100%;
+    }
+
+    .footer .footer-third-column {
+        width: 100%;
+    }
+
+    .footer .footer-fourth-column {
+        width: 100%;
+    }
 }
 
 </style>

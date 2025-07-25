@@ -1,0 +1,248 @@
+@media (max-width: 1100px) {
+    .programmes-section .programme-grid {
+        grid-template-columns: 48% 48%;
+    }
+
+    .counter-container {
+        display: grid;
+        grid-template-columns: 48% 48% ;
+        
+    }
+
+    .opportunities-section .opportunities-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-between;
+        width: 90%;
+        margin: 0px auto;
+        max-width: 1400px;
+        min-width: 320px; */
+    }
+
+    .opportunities-section .opportunities-container #opportunities-grid-title {
+        width: 100%;
+    }
+
+    .opportunities-section .opportunities-mother-grid {
+        display: flex;
+        margin: 25px 0px 0px 0px;
+        /* align-items: flex-start; */
+        width: 100%;
+    }
+
+    .opportunities-section .opportunities-container .opportunities-grid {
+        margin: 0px 20px 0px 0px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .enroll-container {
+        text-align: center;
+        padding: 5px 20px;
+    }
+    .hero-section h1 {
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 45px;
+    }
+
+    .hero-section {
+        padding: 70px 15px 70px 15px;
+        background-color: #E5E5EB;
+    }
+
+    .future-section {
+        margin: 50px 0px 50px 0px;
+        padding: 0px 10px;
+    }
+
+    .future-section .future-section-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .future-section .future-section-container .future-image {
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    .future-section-container .future-content {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .future-section-container .future-content h2 {
+        font-size: 25px;
+        line-height: 35px;
+        
+    }
+
+    .programmes-section .programmes-title h2 {
+        font-size: 25px;
+        
+    }
+
+    .aboutus-section .aboutus-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    .aboutus-section {
+        margin: 50px 0px;
+        padding: 0px 10px;
+    }
+
+    .aboutus-section .aboutus-container .aboutus-content {
+        width: 100%;
+    }
+
+    .aboutus-container .aboutus-content h2 {
+        font-size: 25px;
+        line-height: 25px;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .aboutus-section .aboutus-container .aboutus-image {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    
+
+    .whychoose-section .whychoose-first-container h3 {
+        font-size: 25px;
+    }
+
+    .whychoose-second-container .whychoose-second-container-title h3 {
+        font-size: 25px;
+        margin: 0px;
+    }
+
+    .whychoose-second-container .whychoose-second-container-title p {
+        margin-top: 0px;
+        font-size: 16px;
+    }
+
+    .whychoose-second-container .whychoose-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .testimonial-section .testimonial-title h2 {
+        font-size: 25px;
+        margin: 0px;
+    }
+
+    .testimonial-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-between; */
+        /* flex-wrap: wrap; */
+        width: 100%;
+        padding: 0px 10px;
+        margin: 0px auto;
+        gap: 30px;
+    }
+
+    .testimonial-section .testimonial-title {
+        margin: 20px 0px 40px 0px;
+        padding: 0px 10px;
+    }
+
+    .testimonial-content {
+        text-align: left;
+        width: 100%;
+    }
+
+    .testimonial-image {
+        width: 100%;
+        text-align: left;
+    }
+
+    .testimonial-image img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .counter-section {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background: url(/images/grid-img4.jpg) rgba(0, 17, 28, 0.8) cover ;
+        background-blend-mode: multiply;
+        padding: 50px 0px;
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+
+    .counter-box h3 {
+        font-size:45px;
+        margin: 0px 0px 10px 0px;
+        line-height: 40px;
+    }
+
+    .counter-box span {
+        font-size: 45px;
+        margin-left: -12px;
+        color: #f5b800;
+    }
+
+    
+
+}
+
+
+@media (max-width: 576px) {
+    .programmes-section .programme-grid {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+         
+    .counter-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+
+    .opportunities-section .opportunities-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .opportunities-section .opportunities-container #opportunities-grid-title {
+        width: 100%;
+    }
+
+    .opportunities-section .opportunities-mother-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .opportunities-section .opportunities-container .opportunities-grid {
+        margin: 20px 0px;
+    }
+
+    .whychoose-second-container {
+        width: 60%;
+        margin: -200px auto 0px auto;
+        padding: 20px 15px;
+        
+    }
+
+}

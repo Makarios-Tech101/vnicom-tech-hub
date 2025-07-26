@@ -27,13 +27,13 @@ const toggleDropdown = () => {
          <div class="menu-container" :class="{ open: isMenuOpen }">
             <ul>
                 <li id="menu-item">
-                    <a href="#">Home</a>
+                    <router-link to="/">Home</router-link>
                 </li>
                 <li id="menu-item">
-                    <a href="#our-programmes">Our Programmes</a>
+                    <a href="/#our-programmes">Our Programmes</a>
                 </li>
                 <li id="menu-item">
-                    <a href="#testimonials">Testimonials</a>
+                    <a href="/#testimonials">Testimonials</a>
                 </li>
                 <li class="dropdown" id="menu-item" >
                       <a href="#"  @click.prevent="toggleDropdown">Our Students <span style="font-size: 15px;">&#x2BC6;</span>  </a>
@@ -43,7 +43,7 @@ const toggleDropdown = () => {
                       </ul>
                 </li>
                 <li id="menu-item">
-                    <a href="#about-us">About Us</a>
+                    <a href="/#about-us">About Us</a>
                 </li>
                 <li id="menu-item">
                     <a href="mailto:training@vnicomhub.com">Contact Us</a>

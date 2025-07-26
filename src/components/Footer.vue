@@ -81,10 +81,31 @@
 
 <style scoped>
 .footer {
-    /* background-color: #f1f2ff; */
-    background-color: #05002D;
-    padding: 70px 0px 40px 0px;
+  background-color: #05002D;
+  position: relative;
+  padding: 70px 0px 40px 0px;
+  z-index: 1;
+  overflow: hidden;
 }
+
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/images/VnicomTechlogo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(100%);
+  z-index: 0;
+  opacity: 0.03; 
+
+}  
+.footer > * {
+  position: relative;
+  z-index: 2;
+}
+
 
 .footer-container {
     display: flex;
@@ -212,6 +233,14 @@
         row-gap: 20px;
     }
 
+    .footer::before {
+        background-image: url("/images/VnicomTechlogo.png");
+        background-repeat: repeat;
+        background-size: 400px auto;
+        opacity: 0.03;
+       
+        
+    }
     .footer-container h5 {
         margin: 0px 0px 0px 0px;
         font-size: 18px;
@@ -235,5 +264,6 @@
         width: 100%;
     }
 }
+
 
 </style>

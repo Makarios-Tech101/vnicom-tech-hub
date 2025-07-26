@@ -48,7 +48,7 @@ const testimonials = ref([
   },
   {
     name: 'Gbenga Oladunjoye',
-    track: 'Full Stack We Developer',
+    track: 'Full Stack Web Developer',
     quote: 'I began my tech journey at Vnicom Tech Hub with no prior experience. During my time there, I learned the fundamentals of web development, starting from HTML and CSS to mastering JavaScript. The structured training and supportive environment helped me build real-world skills in both front-end and back-end development. I also gained practical knowledge in database management, security, and deployment. Beyond technical training, Vnicom helped me develop essential soft skills like communication, teamwork, and problem-solving. Thanks to Vnicom, I’m now confidently pursuing a career as a full-stack web developer.',
     image: '../../images/grid-img8.jpg',
   },
@@ -125,7 +125,7 @@ onUnmounted(() => {
                           <p>Learn highly-sought after tech skills with vnicom tech hub.</p>
                       </div>
                       <div class="hero-container-button">
-                        <button class="btn1">Expore all programmes</button>
+                        <button class="btn1"><a href="#testimonials">Expore all programmes</a></button>
                         <button class="btn2">class will be starting soon <span id="enroll-link">Enroll now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9"><path fill="rgb(0, 6, 177)" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"/><path fill="rgb(0, 6, 177)" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg></span></button>
                       </div>
                   </div>
@@ -164,8 +164,8 @@ onUnmounted(() => {
             </section>
             <section class="programmes-section" id="our-programmes">
                <div class="programmes-title">
-                  <h2>Choose a Programme</h2>
-                  <p>Find a programme that you like and register</p>
+                  <h2>Choose a Course</h2>
+                  <p>Find a course that you like and register</p>
                </div>
                <div class="programme-grid">
                   <div class="grid-items">

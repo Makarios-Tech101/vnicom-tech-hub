@@ -167,7 +167,7 @@ onUnmounted(() => {
                   <h2>Choose a Course</h2>
                   <p>Find a course that you like and register</p>
                </div>
-               <div class="programme-grid">
+               <div class="programme-grid" data-aos="fade-up" data-aos-duration="2000">
                   <div class="grid-items">
                      <div class="grid-image">
                         <img src="/images/frontend.png">
@@ -184,7 +184,7 @@ onUnmounted(() => {
                           teach you everything you need to know 
                           to become a front end developer.
                         </p>
-                        <router-link to="/frontend-web-development">View more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9"><path fill="rgb(0, 6, 177)" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"/><path fill="rgb(0, 6, 177)" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg></router-link>
+                        <router-link to="/courses/frontend-web-development">View more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9"><path fill="rgb(0, 6, 177)" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"/><path fill="rgb(0, 6, 177)" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg></router-link>
                      </div>
                   </div>
                    <div class="grid-items">
@@ -203,7 +203,7 @@ onUnmounted(() => {
                           using C# and .NET, along with HTML, CSS, 
                           and JavaScript for frontend integration.
                         </p>
-                        <router-link to="/fullstack-web-development">View more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9"><path fill="rgb(0, 6, 177)" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"/><path fill="rgb(0, 6, 177)" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg></router-link>
+                        <router-link to="/courses/fullstack-web-development">View more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9"><path fill="rgb(0, 6, 177)" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"/><path fill="rgb(0, 6, 177)" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg></router-link>
                      </div>
                   </div>
                    <div class="grid-items">
@@ -216,13 +216,13 @@ onUnmounted(() => {
                      <div class="grid-content">
                         <h4>Front End Web With React/ NextJS</h4>
                         <p>
-                          Front-end engineers work with designers 
-                          to create clean, beautiful, functional 
-                          and fast websites. This programme will 
-                          teach you everything you need to know 
-                          to become a front end developer.
+                           Frontend engineers build interactive, 
+                           user-friendly web interfaces. This program 
+                           teaches modern frontend development using 
+                           ReactJS and Next.js, along with HTML, CSS, 
+                           and JavaScript to create fast, responsive websites
                         </p>
-                        <router-link to="/reactjs-nextjs">View more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9"><path fill="rgb(0, 6, 177)" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"/><path fill="rgb(0, 6, 177)" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg></router-link>
+                        <router-link to="/courses/reactjs-nextjs">View more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9"><path fill="rgb(0, 6, 177)" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"/><path fill="rgb(0, 6, 177)" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg></router-link>
                      </div>
                   </div>
                    <div class="grid-items">
@@ -239,7 +239,7 @@ onUnmounted(() => {
                           to develop native Cross-Platform 
                           iOS and Android Apps Using Flutter.
                         </p>
-                        <router-link to="/mobile-app-development">View more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9"><path fill="rgb(0, 6, 177)" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"/><path fill="rgb(0, 6, 177)" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg></router-link>
+                        <router-link to="/courses/mobile-app-development">View more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9"><path fill="rgb(0, 6, 177)" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"/><path fill="rgb(0, 6, 177)" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg></router-link>
                      </div>
                   </div>
                    <div class="grid-items">
@@ -257,7 +257,8 @@ onUnmounted(() => {
                           course teaches both exploratory 
                           and confirmatory data analysis using python.
                         </p>
-                        <router-link to="/data-science">View more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9"><path fill="rgb(0, 6, 177)" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"/><path fill="rgb(0, 6, 177)" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg></router-link>                     </div>
+                        <router-link to="/courses/data-science">View more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9"><path fill="rgb(0, 6, 177)" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"/><path fill="rgb(0, 6, 177)" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg></router-link>                    
+                      </div>
                   </div>
                    <div class="grid-items">
                      <div class="grid-image">
@@ -275,7 +276,7 @@ onUnmounted(() => {
                           User Interface and robust User 
                           Experience design.
                         </p>
-                        <router-link to="/product-graphic-design">View more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9"><path fill="rgb(0, 6, 177)" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"/><path fill="rgb(0, 6, 177)" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg></router-link>
+                        <router-link to="/courses/product-graphic-design">View more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9"><path fill="rgb(0, 6, 177)" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"/><path fill="rgb(0, 6, 177)" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg></router-link>
                      </div>
                   </div>
                </div>
@@ -330,7 +331,7 @@ onUnmounted(() => {
                   <p>Our programmes are designed to fit your life and your goals</p>
                 </div>
                 
-                <div class="whychoose-grid">
+                <div class="whychoose-grid" >
                   <div class="whychoose-card" id="whychoose-card-blue">
                       <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 12 12"><path fill="#1C3D90" d="M4.25 3.25a1.75 1.75 0 1 1 3.5 0a1.75 1.75 0 0 1-3.5 0m-2 2.25a1.25 1.25 0 1 0 0-2.5a1.25 1.25 0 0 0 0 2.5M11 4.25a1.25 1.25 0 1 1-2.5 0a1.25 1.25 0 0 1 2.5 0M5.25 6C4.56 6 4 6.56 4 7.25V8.5a2 2 0 1 0 4 0V7.25C8 6.56 7.44 6 6.75 6zM3 7.25c0-.289.054-.565.154-.818l-1.231.33a1.25 1.25 0 0 0-.884 1.53l.194.725a2 2 0 0 0 2.45 1.414l.017-.005A3 3 0 0 1 3 8.5zM9 8.5c0 .733-.263 1.405-.7 1.927l.016.004a2 2 0 0 0 2.449-1.414l.194-.725a1.25 1.25 0 0 0-.884-1.53l-1.228-.33c.099.254.153.53.153.818z"/>
                       </svg>
@@ -430,7 +431,7 @@ onUnmounted(() => {
                       you to kickstart and grow your IT career.
                     </p>
                  </div>
-                 <div class="opportunities-mother-grid">
+                 <div class="opportunities-mother-grid" data-aos="fade-up" data-aos-duration="2000">
                     <div class="opportunities-grid">
                      <div class="opportunities-card">
                           <div>

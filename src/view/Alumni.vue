@@ -1,10 +1,10 @@
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue'
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
 import '../assets/main.css';
 import '../assets/responsive.css'
 
-import { ref } from 'vue'
 
 
 const students = ref([
@@ -38,6 +38,24 @@ function truncateText(text, maxWords) {
   }
   return words.slice(0, maxWords).join(' ') + '...'
 }
+
+const showScrollTop = ref(false);
+
+const handleScroll = () => {
+  showScrollTop.value = window.scrollY > 200; 
+};
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
+})
 
 </script>
 
@@ -109,5 +127,16 @@ function truncateText(text, maxWords) {
             </section>
         </main>
         <Footer/>
+        <div>
+            <a href="https://vnicomhub.slack.com/signup#/domain-signup" target="_blank" class="slack-button">
+              <img src="/images/slack-icon.png" alt="slack">
+            </a>
+        </div>  
+        <div>
+                <!-- Scroll to Top Button -->
+          <button v-if="showScrollTop" @click="scrollToTop" class="scroll-top-button">
+              ↑
+          </button>
+        </div>  
     </div>
 </template>

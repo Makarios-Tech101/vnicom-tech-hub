@@ -29,19 +29,19 @@
             </div>
             <div class="footer-second-column">
                 <h5>Training</h5>
-                <a href="#">Front-end Development</a>
-                <a href="#">Fullstack Development</a>
-                <a href="#">Python</a>
-                <a href="#">Mobile App Development</a>
-                <a href="#">Data Science</a>
-                <a href="#">Design (UI/UX & Graphic)</a>
-                <a href="#">Computer Literacy</a>
+                <router-link to="/courses/frontend-web-development">Front-end Development</router-link>
+                <router-link to="/courses/data-science">Data Science</router-link>
+                <router-link to="/courses/fullstack-web-development">Fullstack Web Development</router-link>
+                <router-link to="/courses/mobile-app-development">Mobile App Development</router-link>
+                <router-link to="/courses/product-graphic-design">Product/ Graphic Design</router-link>
+                <router-link to="/">Computer Literacy</router-link>
+                <router-link to="/courses/reactjs-nextjs">ReactJS /NextJS</router-link>
             </div>
             <div class="footer-third-column">
                 <h5>Company</h5>
-                <a href="#">About Us</a>
-                <a href="#">Alumni</a>
-                <a href="#">Success Stories</a>
+                <a href="/#about-us">About Us</a>
+                <router-link to="/our-students/alumni">Alumni</router-link>
+                <router-link to="/our-students/alumni">Success Stories</router-link>
             </div>
             <div class="footer-fourth-column">
                 <h5>Contact</h5>

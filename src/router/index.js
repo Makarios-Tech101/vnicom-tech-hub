@@ -19,45 +19,59 @@ const router = createRouter({
       component: Home,
     },
     {
-      path: '/alumni',
-      name: 'alumni',
-      component: Alumni,
-    },
+      path: '/courses',
+      name: 'Courses',
+      // component: OurService,
+      children: [
+        {
+          path: 'data-science',
+          name: 'DataScience',
+          component: DataScience
+        },
+        {
+          path: 'frontend-web-development',
+          name: 'frontendWebDevelopment',
+          component: FrontendWebDevelopment,
+        },
+        {
+          path: 'reactjs-nextjs',
+          name: 'ReactjsNextjs',
+          component: ReactjsNextjs,
+        },
+        {
+          path: 'fullstack-web-development',
+          name: 'FullstackWebDevelopment',
+          component: FullstackWebDevelopment,
+        },
+        {
+          path: 'mobile-app-development',
+          name: 'MobileAppDevelopment',
+          component: MobileAppDevelopment,
+        },
+        {
+          path: 'product-graphic-design',
+          name: 'ProductGraphicDesign',
+          component: ProductGraphicDesign,
+        },
+      ]
+     },    
     {
-      path: '/present-cohort',
-      name: 'present-cohort',
-      component: PresentCohort,
-    },
-    {
-      path: '/data-science',
-      name: 'data-science',
-      component: DataScience,
-    },
-    {
-      path: '/frontend-web-development',
-      name: 'frontend-web-development',
-      component: FrontendWebDevelopment,
-    },
-    {
-      path: '/reactjs-nextjs',
-      name: 'reactjs-nextjs',
-      component: ReactjsNextjs,
-    },
-    {
-      path: '/fullstack-web-development',
-      name: 'fullstack-web-development',
-      component: FullstackWebDevelopment,
-    },
-    {
-      path: '/mobile-app-development',
-      name: 'mobile-app-development',
-      component: MobileAppDevelopment,
-    },
-    {
-      path: '/product-graphic-design',
-      name: 'product-graphic-design',
-      component: ProductGraphicDesign,
-    },
+      path: '/our-students',
+      name: 'OurStudents',
+      // component: OurService,
+      children: [
+        {
+          path: 'alumni',
+          name: 'Alumni',
+          component: Alumni,
+        },
+        {
+          path: 'present-cohort',
+          name: 'PresentCohort',
+          component: PresentCohort,
+        },
+      ]
+     },    
   ],
   scrollBehavior() {
     return { top: 0 }; 

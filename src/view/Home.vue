@@ -44,7 +44,7 @@ const testimonials = ref([
     name: 'Josephine Taiwo Kayode',
     track: 'Product Designer',
     quote: 'My training experience with Vnicom Tech Hub was informative and valuable. The instructors at Vnicom Tech Hub provided me with a solid foundation in design principles, techniques, and industry best practices.',
-    image: '../../images/grid-img7.jpg',
+    image: '../../images/josephine.jpg',
   },
   {
     name: 'Gbenga Oladunjoye',
@@ -58,15 +58,15 @@ const testimonials = ref([
     quote: 'Vnicom Tech Hub eased and sped up my learning process. I must say it is a platform specifically ordained by God for me to be trained in. The 3 months learning experience I had in their bootcamp changed my story for the better. Everything I can design today was as a result of the training I had in the bootcamp. I was not just trained to design, I had access to a lot of helpful information online. I am a proud product of this learning platform. The experience was tremendous. Shout out to My tutor Mr.Akinjide Stanley',
     image: '../../images/grid-img7.jpg',
   },
-  { name: 'Josephine Taiwo Kayode',
-    track: 'Product Designer',
-    quote: 'My training experience with Vnicom Tech Hub was informative and valuable. The instructors at Vnicom Tech Hub provided me with a solid foundation in design principles, techniques, and industry best practices.',
+  { name: 'Osaranmaye Tomiwa',
+    track: 'Frontend web developer',
+    quote: 'It was awesome, Vnicom gave a faster push into the industry.',
     image: '../../images/grid-img7.jpg',
   },
   {
-    name: 'Fatai Balikis Opeyemi',
-    track: 'UI/UX Designer',
-    quote: 'Vnicom Tech Hub eased and sped up my learning process. I must say it is a platform specifically ordained by God for me to be trained in. The 3 months learning experience I had in their bootcamp changed my story for the better. Everything I can design today was as a result of the training I had in the bootcamp. I was not just trained to design, I had access to a lot of helpful information online. I am a proud product of this learning platform. The experience was tremendous. Shout out to My tutor Mr.Akinjide Stanley',
+    name: 'Rahaenat Mustapha',
+    track: 'Graphic & Product Designer',
+    quote: 'It was so great! My parents played a vital role in making me attend physical classes at Vnicom Tech hub. I wanted an online course at Coursera instead. Grudgingly, I started my classes, it didn’t take up to a week for me to see how nice everyone was. The tutors were patient with our learning process and accommodating. Young as I was, I was never mocked or judged which made learning an interesting one which made me come back for another course during my school holiday. Thank you so much Vnicom for your support and help through my learning journey and I am sure that with your help, I will get a good degree and achieve my goal.',
     image: '../../images/grid-img7.jpg',
   }, 
 ]);
@@ -135,7 +135,7 @@ onUnmounted(() => {
             <section class="future-section">
                 <div class="future-section-container">
                     <div class="future-image">
-                        <img src="/images/why-us.jpg" alt="About Us" />
+                        <img src="/images/data-sciences.jpg" alt="About Us" />
                     </div>
                     <div class="future-content">
                         <h2>The Future Is Here, <br> Are You Ready For The It</h2>
@@ -310,7 +310,7 @@ onUnmounted(() => {
                       </p>
                   </div>
                   <div class="aboutus-image">
-                     <img src="/images/grid-img1.jpg">
+                     <img src="/images/grid-img4.jpg">
                   </div>
                </div>
             </section>

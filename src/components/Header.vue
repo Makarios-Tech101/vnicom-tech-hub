@@ -38,8 +38,8 @@ const toggleDropdown = () => {
                 <li class="dropdown" id="menu-item" >
                       <a href="#"  @click.prevent="toggleDropdown">Our Students <span style="font-size: 15px;">&#x2BC6;</span>  </a>
                       <ul class="dropdown-menu" :class="{ 'open': isDropdownOpen }">
-                          <li class="dropdown-item"><router-link to="/our-students/present-cohort">Present Cohort</router-link></li>
-                          <li class="dropdown-item"><router-link to="/our-students/alumni">Alumni</router-link></li>
+                          <li class="dropdown-item"><router-link to="/our-students/present-cohort">Student Stories</router-link></li>
+                          <li class="dropdown-item"><router-link to="/our-students/alumni">Alumni Stories</router-link></li>
                       </ul>
                 </li>
                 <li id="menu-item">

@@ -17,7 +17,7 @@ const alumniList = ref([
   {
     name: 'Mayowa Oyeniran',
     role: 'Application Developer at Nova Bank',
-    image: '/images/frontend.png',
+    image: '/images/mayowa.jpg',
     companyLogo: '/images/nova-bank.jpg',
     description: 'Determination and Hardwork pays a lot. '
   },
@@ -31,7 +31,7 @@ const alumniList = ref([
   {
     name: 'Oladunjoye, Gbenga Oluwaferanmi',
     role: 'Fullstack Developer at Vnicom Solutions',
-    image: '/images/frontend.png',
+    image: '/images/feranmi.jpeg',
     companyLogo: '/images/vnicom.jpg',
     description: 'The journey of a thousand miles begins with a single step. I am grateful to Vnicom Tech Hub for providing me with the opportunity to take that first step towards my career in tech.'
   },

@@ -9,39 +9,34 @@ import '../assets/responsive.css';
 
 
 const students = ref([
-  { id: 1, name: 'Josephine Taiwo Kayode', image: '/images/student2.jpg', course: "frontend", description: 'Product and Graphic Designer', linkedin: 'https://www.linkedin.com/in', github: 'https://github.com/',testimonial: 'My training experience with Vnicom Tech Hub was informative and valuable. The instructors at Vnicom Tech Hub provided me with a solid foundation in design principles, techniques, and industry best practices.' },
-  { id: 2, name: 'Gbenga Oladunjoye', image: '/images/student1.jpg', course: "frontend", description: 'Fullstack Developer', linkedin: 'https://www.linkedin.com/in/', github: 'https://github.com/', testimonial: 'I began my tech journey at Vnicom Tech Hub with no prior experience. During my time there, I learned the fundamentals of web development, starting from HTML and CSS to mastering JavaScript. The structured training and supportive environment helped me build real-world skills in both front-end and back-end development. I also gained practical knowledge in database management, security, and deployment. Beyond technical training, Vnicom helped me develop essential soft skills like communication, teamwork, and problem-solving. Thanks to Vnicom, I’m now confidently pursuing a career as a full-stack web developer.' },
-  { id: 3, name: 'Josephine Taiwo Kayode', image: '/images/student2.jpg', course: "frontend", description: 'Product and Graphic Designer', linkedin: 'https://www.linkedin.com/in', github: 'https://github.com/',testimonial: 'My training experience with Vnicom Tech Hub was informative and valuable. The instructors at Vnicom Tech Hub provided me with a solid foundation in design principles, techniques, and industry best practices.' },
-  { id: 4, name: 'Gbenga Oladunjoye', image: '/images/student1.jpg', course: "frontend", description: 'Fullstack Developer', linkedin: 'https://www.linkedin.com/in/', github: 'https://github.com/', testimonial: 'I began my tech journey at Vnicom Tech Hub with no prior experience. During my time there, I learned the fundamentals of web development, starting from HTML and CSS to mastering JavaScript. The structured training and supportive environment helped me build real-world skills in both front-end and back-end development. I also gained practical knowledge in database management, security, and deployment. Beyond technical training, Vnicom helped me develop essential soft skills like communication, teamwork, and problem-solving. Thanks to Vnicom, I’m now confidently pursuing a career as a full-stack web developer.' },
-  { id: 5, name: 'Josephine Taiwo Kayode', image: '/images/student2.jpg', course: "frontend", description: 'Product and Graphic Designer', linkedin: 'https://www.linkedin.com/in', github: 'https://github.com/',testimonial: 'My training experience with Vnicom Tech Hub was informative and valuable. The instructors at Vnicom Tech Hub provided me with a solid foundation in design principles, techniques, and industry best practices.' },
-  { id: 6, name: 'Gbenga Oladunjoye', image: '/images/student1.jpg', course: "frontend", description: 'Fullstack Developer', linkedin: 'https://www.linkedin.com/in/', github: 'https://github.com/', testimonial: 'I began my tech journey at Vnicom Tech Hub with no prior experience. During my time there, I learned the fundamentals of web development, starting from HTML and CSS to mastering JavaScript. The structured training and supportive environment helped me build real-world skills in both front-end and back-end development. I also gained practical knowledge in database management, security, and deployment. Beyond technical training, Vnicom helped me develop essential soft skills like communication, teamwork, and problem-solving. Thanks to Vnicom, I’m now confidently pursuing a career as a full-stack web developer.' },
-  { id: 7, name: 'Gbenga Oladunjoye', image: '/images/student1.jpg', course: "design", description: 'Fullstack Developer', linkedin: 'https://www.linkedin.com/in/', github: 'https://github.com/', testimonial: 'I began my tech journey at Vnicom Tech Hub with no prior experience. During my time there, I learned the fundamentals of web development, starting from HTML and CSS to mastering JavaScript. The structured training and supportive environment helped me build real-world skills in both front-end and back-end development. I also gained practical knowledge in database management, security, and deployment. Beyond technical training, Vnicom helped me develop essential soft skills like communication, teamwork, and problem-solving. Thanks to Vnicom, I’m now confidently pursuing a career as a full-stack web developer.' },
-  { id: 8, name: 'Josephine Taiwo Kayode', image: '/images/student2.jpg', course: "design", description: 'Product and Graphic Designer', linkedin: 'https://www.linkedin.com/in', github: 'https://github.com/',testimonial: 'My training experience with Vnicom Tech Hub was informative and valuable. The instructors at Vnicom Tech Hub provided me with a solid foundation in design principles, techniques, and industry best practices.' },
-  { id: 9, name: 'Gbenga Oladunjoye', image: '/images/student1.jpg', course: "design", description: 'Fullstack Developer', linkedin: 'https://www.linkedin.com/in/', github: 'https://github.com/', testimonial: 'I began my tech journey at Vnicom Tech Hub with no prior experience. During my time there, I learned the fundamentals of web development, starting from HTML and CSS to mastering JavaScript. The structured training and supportive environment helped me build real-world skills in both front-end and back-end development. I also gained practical knowledge in database management, security, and deployment. Beyond technical training, Vnicom helped me develop essential soft skills like communication, teamwork, and problem-solving. Thanks to Vnicom, I’m now confidently pursuing a career as a full-stack web developer.' },
-
+  { id: 1, name: 'Oladapo', src: '/images/oladapo.JPG', course: "Frontend Development", description: 'Frontend Developer', linkedin: 'https://www.linkedin.com/in', github: 'https://github.com/',testimonial: 'My training experience with Vnicom Tech Hub was informative and valuable.'},
+  { id: 2, name: 'David Nwachukwu', src: '/images/david.JPG', course: "Frontend Development", description: 'Frontend Developer', linkedin: 'https://www.linkedin.com/in', github:''},
+  { id: 3, name: 'Segun Soyemi', src: '/images/segun.JPG', course: "Frontend Development", description: 'Frontend Developer', linkedin: 'https://www.linkedin.com/in', github:''},
+  { id: 4, name: 'John Omotoyinbo', src: '/images/bolu.JPG', course: "Frontend Development", description: 'Frontend Developer', linkedin: 'https://www.linkedin.com/in', github:''},
+  { id: 5, name: 'Daniel Ogbara', src: '/images/daniel.JPG', course: "Frontend Development", description: 'Frontend Developer', linkedin: 'https://www.linkedin.com/in', github:''},
+  { id: 6, name: 'Erijesu Aladejesu', src: '/images/erijesu.JPG', course: "Frontend Development", description: 'Frontend Developer', linkedin: 'https://www.linkedin.com/in', github:''},
+  { id: 7, name: 'Dorcas Akinyemi', src: '/images/grid-img3.jpg', course: "Frontend Development", description: 'Frontend Developer', linkedin:'https://www.linkedin.com/in' , github:''},
+  { id: 8, name: 'Malik Idowu', src: '/images/malik.JPG', course: "Frontend Development", description: 'Frontend Developer', linkedin:'https://www.linkedin.com/in' , github:''},
+  { id: 9, name: 'Kabiru', src: '/images/Kabiru.jpg', course: "Frontend Development", description: 'Frontend Developer', linkedin:'https://www.linkedin.com/in' , github:''},
+  { id: 10, name: 'Samuel Boluwatife', src: '/images/samuel.jpg', course: "Frontend Development", description: 'Frontend Developer', linkedin:'https://www.linkedin.com/in' , github:''},
+  { id: 11, name: 'Muiz Ogundiran', src: '/images/muiz.jpg', course: "Fullstack Development", description: 'Frontend Developer', linkedin:'https://www.linkedin.com/in' , github:''},
+  { id: 12, name: 'Joshua Bolanle', src: '/images/joshua.jpg', course: "Fullstack Development", description: 'Frontend Developer', linkedin:'https://www.linkedin.com/in' , github:''},
 ])
 
-const isModalOpen = ref(false)
-const selectedStudent = ref(null)
 
-function openModal(student) {
-  selectedStudent.value = student
-  isModalOpen.value = true
-}
+const selectedImage = ref(null);
+const selectedTitle = ref(null);
 
-function closeModal() {
-  isModalOpen.value = false
-  selectedStudent.value = null
-}
 
-function truncateText(text, maxWords) {
-  if (!text) return ''
-  const words = text.split(' ')
-  if (words.length <= maxWords) {
-    return text
-  }
-  return words.slice(0, maxWords).join(' ') + '...'
-}
+const openModal = (image) => {
+  selectedImage.value = image.src;
+  selectedTitle.value = image.title;
+};
+
+const closeModal = () => {
+  selectedImage.value = null;
+  selectedTitle.value = null;
+};
 
 const showScrollTop = ref(false);
 
@@ -89,75 +84,38 @@ onUnmounted(() => {
             </section>
             <section class="students-title-section">
                  <div class="students-title-container">
-                    <h3>Frontend Development (vfwd-q2-2025)</h3>
+                    <h3>All Courses</h3>
                  </div>
             </section>
-            <section class="students-grid-section">
-                <div class="students-grid-container">
-                    <div
-                        v-for="student in students.filter(s => s.course === 'frontend')"
-                        :key="student.id"
-                        class="student-card"
+            <section class="students-section">
+                <div class="student-container">
+                    <div class="student" >
+                        <img 
+                        v-for="(student, index) in students" 
+                        :key="index"
+                        :src="student.src" 
+                        :alt="student.title"
+                        alt="student Image" 
+                        class="student-item" 
                         @click="openModal(student)"
-                    >
-                        <div class="student-image">
-                            <img :src="student.image">
-                        </div>
-                        <div class="student-content">
-                            <h4>{{ student.name }}</h4>
-                            <span>{{ student.description }}</span>
-                            <p>{{ truncateText(student.testimonial, 15) }}</p>
-                            <div class="social-links">
-                                <a v-if="student.linkedin" :href="student.linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                                <a v-if="student.github" :href="student.github" target="_blank" rel="noopener noreferrer">GitHub</a>
-                            </div>    
-                        </div>
+                        :class="{'tall': index % 5 === 0, 'wide': index % 7 === 0}"
+                        data-aos="fade-up" data-aos-duration="2000"
+                        
+                        />
                     </div>
                 </div>
-            </section>
-             <section class="students-title-section">
-                 <div class="students-title-container">
-                    <h3>Product/ Graphic Design (vfwd-q2-2025)</h3>
-                 </div>
-            </section>
-            <section class="students-grid-section">
-                <div class="students-grid-container">
-                    <div
-                        v-for="student in students.filter(s => s.course === 'design')"
-                        :key="student.id"
-                        class="student-card"
-                        @click="openModal(student)"
-                    >
-                        <div class="student-image">
-                            <img :src="student.image">
-                        </div>
-                        <div class="student-content">
-                            <h4>{{ student.name }}</h4>
-                            <span>{{ student.description }}</span>
-                            <p>{{ truncateText(student.testimonial, 15) }}</p>
-                            <div class="social-links">
-                                <a v-if="student.linkedin" :href="student.linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                                <a v-if="student.github" :href="student.github" target="_blank" rel="noopener noreferrer">GitHub</a>
-                            </div>    
-                        </div>
+                <!-- Modal -->
+                <div v-if="selectedImage" class="modal" @click="closeModal">
+                    <div class="modal-content" @click.stop>
+                        <button class="close-button" @click="closeModal">&times;</button>
+                        <img 
+                        :src="selectedImage" 
+                        alt="Modal Image" 
+                        class="modal-image"
+                        >
+                        <h3 class="modal-title">{{ selectedTitle }}</h3> 
                     </div>
                 </div>
-            </section>
-            <section>
-                <!-- Modal Overlay -->
-                    <div v-if="isModalOpen" class="modal-overlay" @click="closeModal">
-                        <div class="modal-content" @click.stop>
-                            <img
-                            v-if="selectedStudent"
-                            :src="selectedStudent.image"
-                            :alt="selectedStudent.name"
-                            />
-                            <h3>{{ selectedStudent?.name }}</h3>
-                            <span>{{ selectedStudent?.description }}</span>
-                            <p>{{ selectedStudent?.testimonial }}</p>
-                            <button @click="closeModal" style="margin-top: 1rem;">Close</button>
-                        </div>
-                    </div>
             </section>
         </main>
         <Footer />
@@ -174,3 +132,49 @@ onUnmounted(() => {
         </div>  
     </div>
 </template>
+
+
+<style scoped>
+
+.students-section {
+    width: 90%;
+    margin: 0px auto 70px auto;
+    max-width: 1400px;   
+    min-width: 320px;
+}
+.student-container {
+  padding: 7px;
+  z-index: 1;
+}
+
+.student {
+  /* display: grid;*/
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  column-count: 4;
+  gap: 05px;
+  cursor: pointer;
+  /* grid-template-rows: repeat(3, 250px); */
+  /* justify-content: center; */
+}
+
+.student-item {
+  width: 100%;
+  height: 100%;
+  /* display: block; */
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tall {
+  grid-row: span 2;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+.student-item:hover {
+  filter: brightness(0.8);
+}
+
+</style>

@@ -47,27 +47,27 @@ const testimonials = ref([
     image: '../../images/josephine.jpg',
   },
   {
-    name: 'Gbenga Oladunjoye',
-    track: 'Full Stack Web Developer',
-    quote: 'I began my tech journey at Vnicom Tech Hub with no prior experience. During my time there, I learned the fundamentals of web development, starting from HTML and CSS to mastering JavaScript. The structured training and supportive environment helped me build real-world skills in both front-end and back-end development. I also gained practical knowledge in database management, security, and deployment. Beyond technical training, Vnicom helped me develop essential soft skills like communication, teamwork, and problem-solving. Thanks to Vnicom, I’m now confidently pursuing a career as a full-stack web developer.',
-    image: '../../images/grid-img8.jpg',
-  },
-  {
     name: 'Fatai Balikis Opeyemi',
     track: 'UI/UX Designer',
     quote: 'Vnicom Tech Hub eased and sped up my learning process. I must say it is a platform specifically ordained by God for me to be trained in. The 3 months learning experience I had in their bootcamp changed my story for the better. Everything I can design today was as a result of the training I had in the bootcamp. I was not just trained to design, I had access to a lot of helpful information online. I am a proud product of this learning platform. The experience was tremendous. Shout out to My tutor Mr.Akinjide Stanley',
-    image: '../../images/grid-img7.jpg',
+    image: '../../images/balikis.jpg',
+  },
+  {
+    name: 'Gbenga Oladunjoye',
+    track: 'Full Stack Web Developer',
+    quote: 'I began my tech journey at Vnicom Tech Hub with no prior experience. During my time there, I learned the fundamentals of web development, starting from HTML and CSS to mastering JavaScript. The structured training and supportive environment helped me build real-world skills in both front-end and back-end development. I also gained practical knowledge in database management, security, and deployment. Beyond technical training, Vnicom helped me develop essential soft skills like communication, teamwork, and problem-solving. Thanks to Vnicom, I’m now confidently pursuing a career as a full-stack web developer.',
+    image: '../../images/feranmi.jpeg',
   },
   { name: 'Osaranmaye Tomiwa',
     track: 'Frontend web developer',
     quote: 'It was awesome, Vnicom gave a faster push into the industry.',
-    image: '../../images/grid-img7.jpg',
+    image: '../../images/tomiwa.jpg',
   },
   {
     name: 'Rahaenat Mustapha',
     track: 'Graphic & Product Designer',
     quote: 'It was so great! My parents played a vital role in making me attend physical classes at Vnicom Tech hub. I wanted an online course at Coursera instead. Grudgingly, I started my classes, it didn’t take up to a week for me to see how nice everyone was. The tutors were patient with our learning process and accommodating. Young as I was, I was never mocked or judged which made learning an interesting one which made me come back for another course during my school holiday. Thank you so much Vnicom for your support and help through my learning journey and I am sure that with your help, I will get a good degree and achieve my goal.',
-    image: '../../images/grid-img7.jpg',
+    image: '../../images/roheenat.jpg',
   }, 
 ]);
 

@@ -113,7 +113,7 @@ onUnmounted(() => {
         <Header />
         <main>
             <section class="enroll-container">
-                <p>Registration ongoing!🎉🎊🎉 <a href="#"> &#8212; Click here to enroll now </a> </p>
+                <p>Registration ongoing!🎉🎊🎉 <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4KmFqL1UzVcbO7BynaSP-I8GWCK-gW-Xz_SwwqEr_hQoDZA/viewform" target="_blank"> &#8212; Click here to enroll now </a> </p>
             </section>
 
             <section>
@@ -125,8 +125,8 @@ onUnmounted(() => {
                           <p>Learn highly-sought after tech skills with vnicom tech hub.</p>
                       </div>
                       <div class="hero-container-button">
-                        <button class="btn1"><a href="#testimonials">Expore all programmes</a></button>
-                        <button class="btn2">class will be starting soon <span id="enroll-link">Enroll now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9"><path fill="rgb(0, 6, 177)" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"/><path fill="rgb(0, 6, 177)" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg></span></button>
+                        <button class="btn1"><a href="#our-programmes">Expore all programmes</a></button>
+                        <button class="btn2">class will be starting soon <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4KmFqL1UzVcbO7BynaSP-I8GWCK-gW-Xz_SwwqEr_hQoDZA/viewform" id="enroll-link">Enroll now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9"><path fill="rgb(0, 6, 177)" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"/><path fill="rgb(0, 6, 177)" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg></a></button>
                       </div>
                   </div>
                 </div>

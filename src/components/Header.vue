@@ -20,9 +20,9 @@ const toggleDropdown = () => {
     <header>
       <div class="header-container">
          <div class="logo-container">
-            <a href="#">
+            <router-link to="/">
                 <img src="/images/vnicom-tech-ogo.png">
-            </a>
+            </router-link>
          </div>
          <div class="menu-container" :class="{ open: isMenuOpen }">
             <ul>
@@ -46,7 +46,7 @@ const toggleDropdown = () => {
                     <a href="/#about-us">About Us</a>
                 </li>
                 <li id="menu-item">
-                    <a href="mailto:training@vnicomhub.com">Contact Us</a>
+                    <a href="mailto:training@vnicomhub.com" id="contact-button">Contact Us</a>
                 </li>
             </ul>
          </div>
@@ -115,6 +115,12 @@ header {
     font-size: 16px;
     font-weight: 600;
     font-family: "Mukta", sans-serif;
+}
+
+#contact-button {
+  background-color: black;
+  color: white !important;
+  padding: 6px 25px;
 }
 
 .menu-container ul a:hover{

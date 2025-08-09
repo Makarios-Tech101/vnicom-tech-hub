@@ -1,4 +1,9 @@
 @media (max-width: 1100px) {
+    .alumnis-section .alumni-grid  {
+        display: grid;
+        grid-template-columns: 48% 48%;
+       
+    }
     .programmes-section .programme-grid {
         grid-template-columns: 48% 48%;
     }
@@ -225,6 +230,11 @@
 
 
 @media (max-width: 576px) {
+    .alumnis-section .alumni-grid  {
+        display: grid;
+        grid-template-columns: 100%;
+       
+    }
     .programmes-section .programme-grid {
         display: grid;
         grid-template-columns: 100%;

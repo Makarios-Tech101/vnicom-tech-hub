@@ -26,7 +26,7 @@ const alumniList = ref([
     role: 'Works at Zenith Bank',
     image: '/images/Eniiyi-2.jpeg',
     companyLogo: '/images/zenith-bank.png',
-    description: 'Just Do It'
+    description: 'Just Do It!'
   },
   {
     name: 'Oladunjoye, Gbenga Oluwaferanmi',
@@ -43,12 +43,19 @@ const alumniList = ref([
     description: 'Such individual should never relent or give up on himself/herself.'
   },
   {
-    name: 'Oke Tobiloba Elijah',
-    role: 'Graphics, UI/UX Designer (Self Employed)',
-    image: '/images/frontend.png',
-    companyLogo: '/images/VnicomTechlogo.png',
-    description: 'The world is constantly evolving, and technology is advancing every day. It is a driving force in nearly every aspect of life. My advice is to take action now: every step you take today will bring you closer to success.'
-  }
+    name: 'Fatai Balikis Opeyemi',
+    role: 'UI/UX Designer at Pacer Lab',
+    image: '/images/balikis.jpg',
+    companyLogo: '/images/vnicom-tech-ogo.png',
+    description: 'Do not stop doing what you have started. Be consistent. Leverage on the power of collaboration. It is very essential .'
+  },
+  // {
+  //   name: 'Oke Tobiloba Elijah',
+  //   role: 'Graphics, UI/UX Designer (Self Employed)',
+  //   image: '/images/frontend.png',
+  //   companyLogo: '/images/VnicomTechlogo.png',
+  //   description: 'The world is constantly evolving, and technology is advancing every day. It is a driving force in nearly every aspect of life. My advice is to take action now: every step you take today will bring you closer to success.'
+  // }
 ])
 
 const selectedAlumni = ref(null)

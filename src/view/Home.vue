@@ -42,33 +42,44 @@ onMounted(() => {
 const testimonials = ref([
   {
     name: 'Josephine Taiwo Kayode',
-    track: 'Product Designer',
+    track: 'Product Designer at Vnicom Solutions',
     quote: 'My training experience with Vnicom Tech Hub was informative and valuable. The instructors at Vnicom Tech Hub provided me with a solid foundation in design principles, techniques, and industry best practices.',
     image: '../../images/josephine.jpg',
   },
   {
     name: 'Fatai Balikis Opeyemi',
-    track: 'UI/UX Designer',
+    track: 'UI/UX Designer at Pacer Lab',
     quote: 'Vnicom Tech Hub eased and sped up my learning process. I must say it is a platform specifically ordained by God for me to be trained in. The 3 months learning experience I had in their bootcamp changed my story for the better. Everything I can design today was as a result of the training I had in the bootcamp. I was not just trained to design, I had access to a lot of helpful information online. I am a proud product of this learning platform. The experience was tremendous. Shout out to My tutor Mr.Akinjide Stanley',
     image: '../../images/balikis.jpg',
   },
   {
+    name: 'Mayowa Oyeniran',
+    track: 'Application Developer at Nova Bank',
+    quote: 'My training experience at Vnicom Tech Hub was both intensive and transformative. It provided a solid practical foundation in key areas of software development and exposed me to real-world projects that sharpened my problem-solving and technical skills. It helped emphasized hands-on learning, collaboration, and accountability which made the learning process very engaging and impactful. I particularly appreciated the mentorship and guidance from experienced instructors, as well as the focus on industry-relevant tools and best practices. We worked on real-life client projects, which helped me build confidence in writing clean code, managing timelines, and communicating effectively within a team. Overall, the experience at Vnicom Tech Hub played a major role in preparing me for the demands of the tech industry, and it continues to shape how I approach learning and growth as a developer.',
+    image: '../../images/mayowa.jpg',
+  },
+    { name: 'Eniiyi Heritage',
+    track: 'IT Developer at Zenith Bank',
+    quote: 'It was a fun learning Experience with challenging tutors who strive to improve their students and themselves alike',
+    image: '../../images/Eniiyi-2.jpeg',
+  },
+  {
     name: 'Gbenga Oladunjoye',
-    track: 'Full Stack Web Developer',
+    track: 'Full Stack Web Developer at Vnicom Solutions',
     quote: 'I began my tech journey at Vnicom Tech Hub with no prior experience. During my time there, I learned the fundamentals of web development, starting from HTML and CSS to mastering JavaScript. The structured training and supportive environment helped me build real-world skills in both front-end and back-end development. I also gained practical knowledge in database management, security, and deployment. Beyond technical training, Vnicom helped me develop essential soft skills like communication, teamwork, and problem-solving. Thanks to Vnicom, I’m now confidently pursuing a career as a full-stack web developer.',
     image: '../../images/feranmi.jpeg',
   },
-  { name: 'Osaranmaye Tomiwa',
-    track: 'Frontend web developer',
-    quote: 'It was awesome, Vnicom gave a faster push into the industry.',
-    image: '../../images/tomiwa.jpg',
-  },
-  {
-    name: 'Rahaenat Mustapha',
-    track: 'Graphic & Product Designer',
-    quote: 'It was so great! My parents played a vital role in making me attend physical classes at Vnicom Tech hub. I wanted an online course at Coursera instead. Grudgingly, I started my classes, it didn’t take up to a week for me to see how nice everyone was. The tutors were patient with our learning process and accommodating. Young as I was, I was never mocked or judged which made learning an interesting one which made me come back for another course during my school holiday. Thank you so much Vnicom for your support and help through my learning journey and I am sure that with your help, I will get a good degree and achieve my goal.',
-    image: '../../images/roheenat.jpg',
-  }, 
+  // { name: 'Osaranmaye Tomiwa',
+  //   track: 'Frontend web developer',
+  //   quote: 'It was awesome, Vnicom gave a faster push into the industry.',
+  //   image: '../../images/tomiwa.jpg',
+  // },
+  // {
+  //   name: 'Rahaenat Mustapha',
+  //   track: 'Graphic & Product Designer',
+  //   quote: 'It was so great! My parents played a vital role in making me attend physical classes at Vnicom Tech hub. I wanted an online course at Coursera instead. Grudgingly, I started my classes, it didn’t take up to a week for me to see how nice everyone was. The tutors were patient with our learning process and accommodating. Young as I was, I was never mocked or judged which made learning an interesting one which made me come back for another course during my school holiday. Thank you so much Vnicom for your support and help through my learning journey and I am sure that with your help, I will get a good degree and achieve my goal.',
+  //   image: '../../images/roheenat.jpg',
+  // }, 
 ]);
 
 const currentIndex = ref(0);
@@ -126,7 +137,7 @@ onUnmounted(() => {
                       </div>
                       <div class="hero-container-button">
                         <button class="btn1"><a href="#our-programmes">Expore all programmes</a></button>
-                        <button class="btn2">class will be starting soon <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4KmFqL1UzVcbO7BynaSP-I8GWCK-gW-Xz_SwwqEr_hQoDZA/viewform" id="enroll-link">Enroll now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9"><path fill="rgb(0, 6, 177)" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"/><path fill="rgb(0, 6, 177)" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg></a></button>
+                        <button class="btn2"><a href="https://docs.google.com/forms/d/e/1FAIpQLSe4KmFqL1UzVcbO7BynaSP-I8GWCK-gW-Xz_SwwqEr_hQoDZA/viewform" id="enroll-link">Enroll now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9"><path fill="rgb(0, 6, 177)" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"/><path fill="rgb(0, 6, 177)" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg></a></button>
                       </div>
                   </div>
                 </div>
@@ -138,7 +149,7 @@ onUnmounted(() => {
                         <img src="/images/data-sciences.jpg" alt="About Us" />
                     </div>
                     <div class="future-content">
-                        <h2>The Future Is Here, <br> Are You Ready For The It</h2>
+                        <h2>The Future Is Here, <br> Are You Ready For The Future</h2>
                         <p>
                             The widespread application of Information 
                             and Communication Technology (ICT) 
@@ -252,10 +263,11 @@ onUnmounted(() => {
                      <div class="grid-content">
                         <h4>Data Science</h4>
                         <p>
-                          Venturing into data analysis? 
-                          we've got your covered. This 
-                          course teaches both exploratory 
-                          and confirmatory data analysis using python.
+                          In this course, you will master both 
+                          exploratory and predictive data analysis using 
+                          Python, build machine learning models, 
+                          and learn how to interpret results for 
+                          real-world decision-making.
                         </p>
                         <router-link to="/courses/data-science">View more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9"><path fill="rgb(0, 6, 177)" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"/><path fill="rgb(0, 6, 177)" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg></router-link>                    
                       </div>
@@ -270,11 +282,17 @@ onUnmounted(() => {
                      <div class="grid-content">
                         <h4>Product/ Graphic Design</h4>
                         <p>
-                          In this course, you will learn 
+                          <!-- In this course, you will learn 
                           how to use Figma for Mobile and 
                           Web Design and create beautiful 
                           User Interface and robust User 
-                          Experience design.
+                          Experience design. -->
+                          Using tools like
+                          Adobe Photoshop to create beautiful designs
+                          like social media flyers, 
+                          posters, logos, and other visual assets.
+                          You will also explore Figma to design beautiful 
+                          User Interfaces and deliver robust User Experiences for mobile and web platforms.
                         </p>
                         <router-link to="/courses/product-graphic-design">View more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9"><path fill="rgb(0, 6, 177)" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"/><path fill="rgb(0, 6, 177)" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg></router-link>
                      </div>
@@ -349,7 +367,7 @@ onUnmounted(() => {
                       </svg>
                       <h4>Capstone Project</h4>
                       <p>
-                        Put your skills to the test 
+                        Put your skills to test 
                         with a real-world capstone project. 
                         Each programme culminates in a hands-on 
                         project that challenges you to apply what 

@@ -104,7 +104,7 @@ onUnmounted(() => {
               </p>
               <h4>Duration:</h4>
               <p>
-                <span class="red">*</span>Six (6) months, twice a week — Mondays and Wednesdays, from 2:00 p.m. to 5:00 p.m.
+                <span class="red">*</span>Six (6) months, twice a week — Mondays and Wednesdays (frontend 10am to 1pm, backend 12 to 2pm)
               </p>
             </div>
 

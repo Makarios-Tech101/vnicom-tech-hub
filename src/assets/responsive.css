@@ -240,6 +240,17 @@
         grid-template-columns: 100%;
     }
 
+    .programmes-section .programme-grid .grid-content{
+        background-color: white;
+        padding: 20px;
+        height: auto;
+        /* position: relative; */
+    }
+
+    .whychoose-section  {
+        padding: 80px 10px 250px 10px;
+    }
+
          
     .counter-container {
         display: flex;
@@ -320,6 +331,10 @@
         flex-direction: column;
     }
 
+    .future-section .future-section-container img {
+        width: 300px;
+    }
+
 }
 
 @media(max-width:350px) {
@@ -338,5 +353,15 @@
     .mobile-links {
         display: none;
 
+    }
+}
+
+@media (max-width: 300px) {
+    .future-section .future-section-container img {
+        width: 250px;
+    }
+
+    .aboutus-section .aboutus-container .aboutus-image img {
+        width: 250px;
     }
 }

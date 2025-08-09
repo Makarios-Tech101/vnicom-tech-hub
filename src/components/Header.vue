@@ -210,6 +210,7 @@ ul.dropdown-menu {
     width: 90%;
     margin: 0px;
     width: 100%;
+    padding: 0px
   }
 
   .menu-container ul li{
